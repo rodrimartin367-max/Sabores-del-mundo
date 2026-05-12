@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/admin.js" defer></script> <!-- Fíjate, carga admin.js -->
+</head>
+<body>
+    
+    <header class="header">
+    <h1>Sabores del mundo</h1>
+    <nav style="display: flex; gap: 1rem; align-items: center;">
+        </nav>
+</header>
+    <main class="menu-container" style="padding-top: 2rem;">
+    <div class="menu-header">
+        <div class="titulos">
+            <h1 style="font-family: 'Cormorant Garamond', serif;">Panel de Administración</h1>
+            <p>Gestión de usuarios y reservas</p>
+        </div>
+    </div>
+    <hr class="separador">
+
+    <div style="width: 100%; max-width: 1000px; margin: 0 auto 1rem auto; text-align: left;">
+        <a href="index.html" class="link-volver">← Volver al inicio</a>
+    </div>
+
+    <div class="perfil-layout" style="max-width: 1000px; margin: 0 auto;">
+        
+        <article class="tarjeta-perfil" style="width: 100%;">
+            <h2 style="font-family: 'Cormorant Garamond', serif; border-bottom: 1px solid #d6cdc4; padding-bottom: 0.5rem;">Usuarios Registrados</h2>
+            <div id="contenedor-tabla-usuarios" style="margin-top: 1.5rem; overflow-x: auto;">
+                <p>Cargando datos desde el servidor...</p>
+                </div>
+        </article>
+
+        <article id="panel-reservas-admin" class="tarjeta-perfil oculto" style="width: 100%; margin-top: 2rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #d6cdc4; padding-bottom: 0.5rem;">
+                <h2 style="font-family: 'Cormorant Garamond', serif;">Reservas del cliente</h2>
+                <button onclick="ocultarPanelReservas()" class="btn btn-reserva">Cerrar panel</button>
+            </div>
+            <div id="contenedor-reservas-usuario" style="margin-top: 1.5rem;">
+                </div>
+        </article>
+
+    </div>
+</main>
+
+</body>
+</html>

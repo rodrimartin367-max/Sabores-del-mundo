@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    build: ./database
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: madrid
+      MYSQL_DATABASE: sabores_del_mundo
+    volumes:
+      - db_data:/var/lib/mysql
+
+  app:
+    build: .
+    depends_on:
+      - db
+
+volumes:
+  db_data:
