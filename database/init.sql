@@ -70,7 +70,7 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Espana', 'dia', 'primero', 'Jueves', 'Caldo Gallego', 'Potaje tradicional gallego con grelos, alubias y patatas.', NULL, '../assets/caldo-gallego.jpg'),
 ('Espana', 'dia', 'primero', 'Jueves', 'Pulpo a Feira', 'Pulpo cocido con pimentón, aceite de oliva y sal gruesa.', NULL, '../assets/pulpo.jpg'),
 ('Espana', 'dia', 'segundo', 'Jueves', 'Merluza a la Gallega', 'Lomo de merluza con ajada y pimientos del padrón.', NULL, '../assets/merluza.jpg'),
-('Espana', 'dia', 'segundo', 'Jueves', 'Lacón con Grelos', 'Plato tradicional de cerdo con verduras cocidas.', NULL, '../assets/lacon.jpg'),
+('Espana', 'dia', 'segundo', 'Jueves', 'Lacón con Grelos', 'Plato tradicional de cerdo con verduras cocidas.', NULL, '../assets/lacon.png'),
 ('Espana', 'dia', 'postre', 'Jueves', 'Tarta de Santiago', 'Bizcocho clásico de almendras y azúcar glass.', NULL, '../assets/tarta-santiago.jpg'),
 ('Espana', 'dia', 'postre', 'Jueves', 'Fruta de Temporada', 'Selección de la mejor fruta fresca del día.', NULL, '../assets/fruta.jpg'),
 
