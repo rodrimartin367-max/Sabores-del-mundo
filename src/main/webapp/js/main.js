@@ -29,7 +29,7 @@ function mostrarVista(tipo, pais) {
     // =========================================================================
     let textoSubtitulo = nombrePaisPantalla + ' - ' + diaPantalla;
     if (tipo === 'dia') {
-        textoSubtitulo += ' | El precio del menú del día es de 20€ con bebidas aparte';
+        textoSubtitulo += ' | Precio del menú del día: 20€ (bebidas aparte)';
     }
     document.getElementById(tipo === 'dia' ? 'subtitulo-dia' : 'subtitulo-finde').innerText = textoSubtitulo;
     // =========================================================================
