@@ -50,7 +50,7 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Espana', 'dia', 'primero', 'Lunes', 'Ensalada de Pimientos Asados', 'Pimientos asados con atún y un toque de aceite de oliva.', NULL, '../assets/ensalada-pimientos.jpg'),
 ('Espana', 'dia', 'segundo', 'Lunes', 'Pescaíto Rebozado al Horno', 'Fritura tradicional andaluza servida con ensalada fresca.', NULL, '../assets/pescaito.jpg'),
 ('Espana', 'dia', 'segundo', 'Lunes', 'Pollo al Ajillo', 'Receta clásica de pollo dorado con abundantes ajos.', NULL, '../assets/pollo-ajillo.jpg'),
-('Espana', 'dia', 'postre', 'Lunes', 'Pastel Cordobés', 'Dulce tradicional de hojaldre relleno de cabello de ángel.', NULL, '../assets/pastel-cordobes.jpg'),
+('Espana', 'dia', 'postre', 'Lunes', 'Pastel Cordobés', 'Dulce tradicional de hojaldre relleno de cabello de ángel.', NULL, '../assets/pastel-cordobes.png'),
 ('Espana', 'dia', 'postre', 'Lunes', 'Fruta de Temporada', 'Selección de la mejor fruta fresca del día.', NULL, '../assets/fruta.jpg'),
 
 ('Espana', 'dia', 'primero', 'Martes', 'Ensalada Valenciana', 'Ensalada fresca típica de la huerta valenciana.', NULL, '../assets/ensalada-valenciana.jpg'),
