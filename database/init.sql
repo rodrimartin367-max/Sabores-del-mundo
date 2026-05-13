@@ -87,7 +87,7 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Espana', 'infantil', 'infantil', 'Todos', 'Puré de Verduras', 'Crema suave de verduras de temporada.', NULL, '../assets/pure.jpg'),
 ('Espana', 'infantil', 'infantil', 'Todos', 'Espaguetis a la Boloñesa', 'Pasta con salsa de tomate natural.', NULL, '../assets/espaguetis.jpg'),
-('Espana', 'infantil', 'infantil', 'Todos', 'Arroz Tres Delicias', 'Arroz salteado con guisantes, jamón y tortilla.', NULL, '../assets/arroz-delicias.jpg'),
+('Espana', 'infantil', 'infantil', 'Todos', 'Arroz Tres Delicias', 'Arroz salteado con guisantes, jamón y tortilla.', NULL, '../assets/arroz-delicias.webp'),
 ('Espana', 'infantil', 'infantil', 'Todos', 'Hamburguesa Casera', 'Hamburguesa con patata al horno.', NULL, '../assets/hamburguesa.jpg'),
 ('Espana', 'infantil', 'infantil', 'Todos', 'Pechuga de Pollo', 'Filete de pechuga con ensalada de tomate y maíz.', NULL, '../assets/pechuga.jpg'),
 ('Espana', 'infantil', 'infantil', 'Todos', 'Palitos de Merluza al Horno', 'Merluza con ensalada de tomate.', NULL, '../assets/palitos-merluza.jpg'),
