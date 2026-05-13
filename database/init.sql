@@ -32,9 +32,6 @@ CREATE TABLE IF NOT EXISTS platos (
 
 TRUNCATE TABLE platos;
 
--- ==========================================
--- BEBIDAS - ESPAÑA
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Espana', 'bebida', 'bebida', 'Todos', 'Vino Tinto / Blanco / Rosado (Copa)', 'Copa de vino de la casa.', '3,50 €', '../assets/vino.png'),
 ('Espana', 'bebida', 'bebida', 'Todos', 'Jarra de Agua', 'Agua del grifo.', '0,00 €', '../assets/agua-jarra.jpg'),
@@ -42,9 +39,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Espana', 'bebida', 'bebida', 'Todos', 'Cerveza (Tercio/Doble)', 'Cerveza de barril o botella.', '2,80 €', '../assets/cerveza.png'),
 ('Espana', 'bebida', 'bebida', 'Todos', 'Refresco', 'Coca-Cola, Fanta, Sprite, Nestea.', '2,70 €', '../assets/refresco.jpg');
 
--- ==========================================
--- ESPAÑA - MENÚ DEL DÍA (L-V)
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Espana', 'dia', 'primero', 'Lunes', 'Gazpacho Andaluz', 'Sopa fría tradicional a base de tomate y hortalizas frescas.', NULL, '../assets/gazpacho.jpg'),
 ('Espana', 'dia', 'primero', 'Lunes', 'Ensalada de Pimientos Asados', 'Pimientos asados con atún y un toque de aceite de oliva.', NULL, '../assets/ensalada-pimientos.jpg'),
@@ -81,9 +75,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Espana', 'dia', 'postre', 'Viernes', 'Cañas Zamoranas', 'Dulce frito relleno de deliciosa crema pastelera.', NULL, '../assets/canas.jpg'),
 ('Espana', 'dia', 'postre', 'Viernes', 'Fruta de Temporada', 'Selección de la mejor fruta fresca del día.', NULL, '../assets/fruta.jpg');
 
--- ==========================================
--- ESPAÑA - MENÚ INFANTIL
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Espana', 'infantil', 'infantil', 'Todos', 'Puré de Verduras', 'Crema suave de verduras de temporada.', NULL, '../assets/pure.jpg'),
 ('Espana', 'infantil', 'infantil', 'Todos', 'Espaguetis a la Boloñesa', 'Pasta con salsa de tomate natural.', NULL, '../assets/espaguetis.jpg'),
@@ -94,9 +85,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Espana', 'infantil', 'infantil', 'Todos', 'Yogur Natural', 'Yogur cremoso suave.', NULL, '../assets/yogur.jpg'),
 ('Espana', 'infantil', 'infantil', 'Todos', 'Fruta', 'Pieza de fruta del día.', NULL, '../assets/fruta.jpg');
 
--- ==========================================
--- ESPAÑA - MENÚ FIN DE SEMANA
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Espana', 'finde', 'entrante', 'Sabado', 'Tabla de Ibéricos', 'Selección premium de jamón, lomo y embutidos ibéricos.', '15,50 €', '../assets/ibericos.jpg'),
 ('Espana', 'finde', 'entrante', 'Sabado', 'Patatas Bravas', 'Cubos de patata crujientes por fuera y tiernos por dentro, bañados en salsa brava.', '6,50 €', '../assets/bravas.jpg'),
@@ -117,7 +105,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Espana', 'finde', 'postre', 'Sabado', 'Cuajada con Miel', 'Postre lácteo suave y fresco, servido con miel artesanal.', '4,00 €', '../assets/cuajada.jpg'),
 ('Espana', 'finde', 'postre', 'Sabado', 'Torrijas de Pan Integral', 'Nuestra versión saludable del clásico infusionada en leche.', '4,00 €', '../assets/torrijas.jpg');
 
--- Domingo España
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Espana', 'finde', 'entrante', 'Domingo', 'Tabla de Ibéricos', 'Selección premium de jamón, lomo y embutidos ibéricos.', '15,50 €', '../assets/ibericos.jpg'),
 ('Espana', 'finde', 'entrante', 'Domingo', 'Patatas Bravas', 'Cubos de patata crujientes por fuera y tiernos por dentro, bañados en salsa brava.', '6,50 €', '../assets/bravas.jpg'),
@@ -138,9 +125,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Espana', 'finde', 'postre', 'Domingo', 'Cuajada con Miel', 'Postre lácteo suave y fresco, servido con miel artesanal.', '4,00 €', '../assets/cuajada.jpg'),
 ('Espana', 'finde', 'postre', 'Domingo', 'Torrijas de Pan Integral', 'Nuestra versión saludable del clásico infusionada en leche.', '4,00 €', '../assets/torrijas.jpg');
 
--- ==========================================
--- BEBIDAS - TAILANDIA
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Tailandia', 'bebida', 'bebida', 'Todos', 'Vino Tinto / Blanco / Rosado (Copa)', 'Copa de vino de la casa.', '3,50 €', '../assets/vino.jpg'),
 ('Tailandia', 'bebida', 'bebida', 'Todos', 'Jarra de Agua', 'Agua del grifo.', '0,00 €', '../assets/agua-jarra.jpg'),
@@ -149,9 +133,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Tailandia', 'bebida', 'bebida', 'Todos', 'Cerveza Tailandesa (Singha)', 'La original premium.', '2,80 €', '../assets/singha.jpg'),
 ('Tailandia', 'bebida', 'bebida', 'Todos', 'Refresco', 'Coca-Cola, Fanta, Sprite, Nestea.', '2,70 €', '../assets/refresco.jpg');
 
--- ==========================================
--- TAILANDIA - MENÚ DEL DÍA (L-V)
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Tailandia', 'dia', 'primero', 'Lunes', 'Sopa Tom Kha Gai', 'Sopa muy cremosa y suave de pollo y leche de coco.', NULL, '../assets/tom-kha-gai.jpg'),
 ('Tailandia', 'dia', 'primero', 'Lunes', 'Ensalada Som Tam', 'Ensalada de papaya verde con aliño de lima y cacahuete.', NULL, '../assets/som-tam.jpg'),
@@ -188,9 +169,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Tailandia', 'dia', 'postre', 'Viernes', 'Luk Chup', 'Dulces tradicionales de pasta de judía verde glaseados.', NULL, '../assets/luk-chup.jpg'),
 ('Tailandia', 'dia', 'postre', 'Viernes', 'Fruta de Temporada', 'Selección de la mejor fruta fresca del día.', NULL, '../assets/fruta.jpg');
 
--- ==========================================
--- TAILANDIA - MENÚ INFANTIL
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Tailandia', 'infantil', 'infantil', 'Todos', 'Brochetas Satay con Brócoli', 'Brochetas de pollo marinadas en leche de coco con brócoli al vapor.', NULL, '../assets/satay-infantil.jpg'),
 ('Tailandia', 'infantil', 'infantil', 'Todos', 'Sopa Tom Yum sin picante', 'Un caldo aromático, suave y sin rastro de picante.', NULL, '../assets/sopa-suave.jpg'),
@@ -201,9 +179,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Tailandia', 'infantil', 'infantil', 'Todos', 'Helado de Coco o Vainilla', 'Helado artesanal elaborado con ingredientes naturales.', NULL, '../assets/helado.jpg'),
 ('Tailandia', 'infantil', 'infantil', 'Todos', 'Brocheta de Fruta Tropical', 'Piña, mango y plátano a elegir, con o sin sirope de chocolate.', NULL, '../assets/brocheta-fruta.jpg');
 
--- ==========================================
--- TAILANDIA - MENÚ FIN DE SEMANA
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Tailandia', 'finde', 'entrante', 'Sabado', 'Surtido de Brochetas Satay', 'Brochetas de pollo marinadas servidas con la clásica salsa de cacahuetes.', '8,50 €', '../assets/satay.jpg'),
 ('Tailandia', 'finde', 'entrante', 'Sabado', 'Poh Pia Tod Caseros', 'Rollitos vegetales hechos a mano con fideos de cristal y salsa agridulce.', '8,50 €', '../assets/rollitos.jpg'),
@@ -221,7 +196,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Tailandia', 'finde', 'postre', 'Sabado', 'Macedonia de Frutas', 'Selección de frutas de temporada cortadas a mano.', '4,50 €', '../assets/macedonia.jpg'),
 ('Tailandia', 'finde', 'postre', 'Sabado', 'Helado Casero', 'Helado de Té Verde o Coco casero a elegir.', '4,00 €', '../assets/helado-thai.jpg');
 
--- Domingo Tailandia
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Tailandia', 'finde', 'entrante', 'Domingo', 'Surtido de Brochetas Satay', 'Brochetas de pollo marinadas servidas con la clásica salsa de cacahuetes.', '8,50 €', '../assets/satay.jpg'),
 ('Tailandia', 'finde', 'entrante', 'Domingo', 'Poh Pia Tod Caseros', 'Rollitos vegetales hechos a mano con fideos de cristal y salsa agridulce.', '8,50 €', '../assets/rollitos.jpg'),
@@ -239,9 +213,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Tailandia', 'finde', 'postre', 'Domingo', 'Macedonia de Frutas', 'Selección de frutas de temporada cortadas a mano.', '4,50 €', '../assets/macedonia.jpg'),
 ('Tailandia', 'finde', 'postre', 'Domingo', 'Helado Casero', 'Helado de Té Verde o Coco casero a elegir.', '4,00 €', '../assets/helado-thai.jpg');
 
--- ==========================================
--- BEBIDAS - CHILE
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Chile', 'bebida', 'bebida', 'Todos', 'Vino Tinto / Blanco / Rosado (Copa)', 'Copa de vino de la casa.', '3,50 €', '../assets/vino.jpg'),
 ('Chile', 'bebida', 'bebida', 'Todos', 'Jarra de Agua', 'Agua del grifo.', '0,00 €', '../assets/agua-jarra.jpg'),
@@ -249,9 +220,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Chile', 'bebida', 'bebida', 'Todos', 'Pisco Sour Tradicional', 'Cóctel emblemático.', '3,80 €', '../assets/pisco-sour.jpg'),
 ('Chile', 'bebida', 'bebida', 'Todos', 'Refresco', 'Coca-Cola, Fanta, Sprite, Nestea.', '2,70 €', '../assets/refresco.jpg');
 
--- ==========================================
--- CHILE - MENÚ DEL DÍA (L-V)
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Chile', 'dia', 'primero', 'Lunes', 'Ensalada Chilena', 'Fresca ensalada de tomate pelado, cebolla cortada fina, cilantro y aliño tradicional.', NULL, '../assets/ensalada-chilena.jpg'),
 ('Chile', 'dia', 'primero', 'Lunes', 'Caldillo de Congrio', 'Guiso reconfortante de pescado con papas y verduras, servido en cuenco.', NULL, '../assets/caldillo-congrio.jpg'),
@@ -288,9 +256,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Chile', 'dia', 'postre', 'Viernes', 'Brazo de Reina', 'Bizcocho enrollado esponjoso y relleno de abundante manjar artesanal.', NULL, '../assets/brazo-reina.jpg'),
 ('Chile', 'dia', 'postre', 'Viernes', 'Fruta de Temporada', 'Selección de la mejor fruta fresca del día.', NULL, '../assets/fruta.jpg');
 
--- ==========================================
--- CHILE - MENÚ INFANTIL
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Chile', 'infantil', 'infantil', 'Todos', 'Crema de Zapallo', 'Crema suave y dulce de calabaza.', NULL, '../assets/crema-zapallo.jpg'),
 ('Chile', 'infantil', 'infantil', 'Todos', 'Arroz con Verduras', 'Arroz salteado con verduras picadas finamente.', NULL, '../assets/arroz-verduras.jpg'),
@@ -301,9 +266,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Chile', 'infantil', 'infantil', 'Todos', 'Leche Asada', 'Postre lácteo tradicional al horno con caramelo.', NULL, '../assets/leche-asada.jpg'),
 ('Chile', 'infantil', 'infantil', 'Todos', 'Fruta de Temporada', 'Pieza de fruta del día.', NULL, '../assets/fruta.jpg');
 
--- ==========================================
--- CHILE - MENÚ FIN DE SEMANA
--- ==========================================
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Chile', 'finde', 'entrante', 'Sabado', 'Sopaipillas al Horno con Pebre', 'Masas tradicionales de zapallo servidas con un picadillo de tomate, cebolla y ají verde.', '6,50 €', '../assets/sopaipillas.jpg'),
 ('Chile', 'finde', 'entrante', 'Sabado', 'Empanaditas de Pino o Queso', 'Selección artesanal horneada, rellenas de carne picada o queso fundido.', '7,50 €', '../assets/empanaditas.jpg'),
@@ -325,7 +287,6 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Chile', 'finde', 'postre', 'Sabado', 'Brazo de Reina', 'Bizcocho enrollado relleno de manjar artesanal.', '4,00 €', '../assets/brazo-reina.jpg'),
 ('Chile', 'finde', 'postre', 'Sabado', 'Macedonia de Fruta de Temporada', 'Selección de frutas naturales de temporada.', '4,00 €', '../assets/macedonia.jpg');
 
--- Domingo Chile
 INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion, precio, imagen) VALUES
 ('Chile', 'finde', 'entrante', 'Domingo', 'Sopaipillas al Horno con Pebre', 'Masas tradicionales de zapallo servidas con un picadillo de tomate, cebolla y ají verde.', '6,50 €', '../assets/sopaipillas.jpg'),
 ('Chile', 'finde', 'entrante', 'Domingo', 'Empanaditas de Pino o Queso', 'Selección artesanal horneada, rellenas de carne picada o queso fundido.', '7,50 €', '../assets/empanaditas.jpg'),
@@ -346,7 +307,5 @@ INSERT INTO platos (pais, tipo_menu, categoria, dia_semana, nombre, descripcion,
 ('Chile', 'finde', 'postre', 'Domingo', 'Chocotorta', 'Capas de galletas de chocolate en café, intercaladas con manjar y queso crema.', '5,50 €', '../assets/chocotorta.jpg'),
 ('Chile', 'finde', 'postre', 'Domingo', 'Brazo de Reina', 'Bizcocho enrollado relleno de manjar artesanal.', '4,00 €', '../assets/brazo-reina.jpg'),
 ('Chile', 'finde', 'postre', 'Domingo', 'Macedonia de Fruta de Temporada', 'Selección de frutas naturales de temporada.', '4,00 €', '../assets/macedonia.jpg');
-
--- Insertar Usuario Administrador
 INSERT INTO usuarios (nombre, email, password, rol) 
 VALUES ('Jefe Sabores', 'admin@saboresdelmundo.com', 'admin123', 'ADMIN');

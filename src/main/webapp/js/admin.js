@@ -38,7 +38,6 @@ function cargarUsuarios() {
     });
 }
 
-// Recibimos el ID como número
 function verReservasUsuario(idUsuario, nombreUsuario) {
     const panelReservas = document.getElementById('panel-reservas-admin');
     const contenedor = document.getElementById('contenedor-reservas-usuario');
@@ -47,7 +46,6 @@ function verReservasUsuario(idUsuario, nombreUsuario) {
     document.querySelector('#panel-reservas-admin h2').innerText = "Reservas de " + nombreUsuario;
     contenedor.innerHTML = '<p>Buscando reservas en la base de datos...</p>';
 
-    // Hacemos el fetch pasando el ?id=
     fetch('/api/reservas/usuario?id=' + idUsuario)
     .then(res => res.ok ? res.json() : Promise.reject("Error"))
     .then(reservas => {
@@ -91,14 +89,12 @@ function verReservasUsuario(idUsuario, nombreUsuario) {
 
 function eliminarReservaAdmin(idReserva, idUsuario, nombreUsuario) {
     if (confirm("¿Estás seguro de que quieres eliminar esta reserva?")) {
-        // Pasamos el ID por la URL, es la forma más segura para peticiones DELETE
         fetch('/api/reservas/borrar?id=' + idReserva, {
             method: 'DELETE'
         })
         .then(response => {
             if (!response.ok) throw new Error('Error al borrar reserva');
             alert('Reserva eliminada correctamente.');
-            // Volvemos a cargar las reservas automáticamente
             verReservasUsuario(idUsuario, nombreUsuario);
         })
         .catch(error => alert('Hubo un error al eliminar la reserva.'));
@@ -137,7 +133,6 @@ let tablaHTML = `
         function eliminarUsuarioAdmin(emailUsuario) {
     if (confirm(`¿Estás seguro de que quieres eliminar al usuario ${emailUsuario}?\n\nATENCIÓN: Se borrarán también todas sus reservas del sistema.`)) {
         
-        // Pasamos el email por la URL para que no falle el método DELETE
         fetch('/api/admin/borrar-usuario?email=' + encodeURIComponent(emailUsuario), {
             method: 'DELETE'
         })
@@ -146,10 +141,8 @@ let tablaHTML = `
             
             alert('Usuario y sus reservas eliminados correctamente.');
             
-            // Recargamos la tabla de usuarios automáticamente
             cargarUsuarios();
             
-            // Si el panel de reservas de ese usuario estaba abierto, lo cerramos
             const panelReservas = document.getElementById('panel-reservas-admin');
             if (panelReservas) {
                 panelReservas.classList.add('oculto');

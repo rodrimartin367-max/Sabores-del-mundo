@@ -1,8 +1,6 @@
-let usuarioLogueado = null; // Nos dirá si hay alguien conectado
+let usuarioLogueado = null;
 
 function mostrarVista(tipo, pais) {
-    // TRUCO PRO: Separamos los días con tildes (para que se vea bonito en el título) 
-    // de los días sin tildes (para buscar en la Base de Datos sin que explote)
     const diasPantalla = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
     const diasBD = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
     
@@ -24,15 +22,11 @@ function mostrarVista(tipo, pais) {
         nombrePaisPantalla = 'España';
     }
 
-    // =========================================================================
-    // AQUÍ ESTÁ EL TÍTULO CON EL PRECIO DEL MENÚ DEL DÍA
-    // =========================================================================
     let textoSubtitulo = nombrePaisPantalla + ' - ' + diaPantalla;
     if (tipo === 'dia') {
         textoSubtitulo += ' | Precio del menú del día: 20€ (bebidas aparte)';
     }
     document.getElementById(tipo === 'dia' ? 'subtitulo-dia' : 'subtitulo-finde').innerText = textoSubtitulo;
-    // =========================================================================
 
     if (usuarioLogueado !== null) {
         if(document.getElementById('btn-accede')) document.getElementById('btn-accede').style.display = 'none';
@@ -46,7 +40,6 @@ function mostrarVista(tipo, pais) {
         }
     }
 
-    // Llamamos a la API usando el día SIN TILDE (diaBD)
     fetch(`/api/platos?pais=${encodeURIComponent(pais)}&tipo=${tipo}&dia=${encodeURIComponent(diaBD)}`)
     .then(res => res.json())
     .then(platos => {
@@ -58,7 +51,6 @@ function mostrarVista(tipo, pais) {
         }
 
         platos.forEach(p => {
-            // AHORA LAS BEBIDAS SON LO PRIMERO QUE SE MUESTRA AL ENTRAR
             const display = p.categoria === 'bebida' ? 'flex' : 'none';
             
             const precioHTML = p.precio ? `<p style="font-weight: bold; color: #8C3A2A; margin-top: 1rem; font-size: 1.1rem;">${p.precio}</p>` : '';
@@ -78,7 +70,6 @@ function mostrarVista(tipo, pais) {
             `;
         });
         
-        // Hacemos clic automático en la pestaña "Bebidas"
         const primeraPestana = document.querySelector(`#${vistaId} .tab-pill`);
         if(primeraPestana) primeraPestana.click();
     })
@@ -319,8 +310,6 @@ function cerrarSesion() {
         volverInicio(); 
     }
 }
-
-// --- LÓGICA DEL CALENDARIO PERSONALIZADO Y HORAS ---
 
 let mesActualCalendario = new Date().getMonth();
 let anoActualCalendario = new Date().getFullYear();
